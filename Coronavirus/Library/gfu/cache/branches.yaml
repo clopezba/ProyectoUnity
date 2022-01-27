@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-01-27T18:43:35.694+01:00
-  initializedAtString: 2022-01-27T18:43:35.682+01:00
+  lastUpdatedAtString: 2022-01-27T18:46:41.552+01:00
+  initializedAtString: 2022-01-27T18:46:01.157+01:00
   localBranches:
   - name: master
     tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   - name: ciudad2D/master
     tracking: '[None]'
@@ -94,6 +96,7 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+      - master
     - Values:
       - master
     - Values:
@@ -107,6 +110,11 @@ MonoBehaviour:
     subKeyValues:
     - Values:
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/clopezba/ProyectoUnity.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/clopezba/ProyectoUnity.git
