@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 671079121}
   - component: {fileID: 671079123}
   m_Layer: 0
-  m_Name: chicaParada_0
+  m_Name: chica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -491,6 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a204a3fa0dc2fa4cba352e537d4b11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fuerza: 1
 --- !u!212 &671079119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -595,13 +596,13 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 6
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &671079123
 Animator:

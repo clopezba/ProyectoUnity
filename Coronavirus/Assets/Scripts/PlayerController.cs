@@ -22,10 +22,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             rb2D.AddForce(new Vector2(fuerza, 0), ForceMode2D.Impulse);
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb2D.AddForce(new Vector2(-1 * fuerza, 0), ForceMode2D.Impulse);
+            GetComponent<SpriteRenderer>().flipX = true;
         }
         if (Input.GetButton("Jump"))
         {
