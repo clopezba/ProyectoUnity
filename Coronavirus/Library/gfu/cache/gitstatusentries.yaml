@@ -13,90 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2022-01-27T18:46:47.381+01:00
-  initializedAtString: 2022-01-27T18:45:44.455+01:00
+  lastUpdatedAtString: 2022-01-27T18:54:04.557+01:00
+  initializedAtString: 2022-01-27T18:54:03.655+01:00
   entries:
-  - path: Coronavirus\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Coronavirus.sln
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Coronavirus.sln
-    projectPath: Coronavirus.sln
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Coronavirus\Library\ArtifactDB
     fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\ArtifactDB
     projectPath: Library\ArtifactDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Library\Artifacts\3f\3fde39a0ac32981cd308c39f571c105a
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\Artifacts\3f\3fde39a0ac32981cd308c39f571c105a
-    projectPath: Library\Artifacts\3f\3fde39a0ac32981cd308c39f571c105a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Coronavirus\Library\Artifacts\d4\d4fb3aa8cbd333f813d6376b2be87c5a
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\Artifacts\d4\d4fb3aa8cbd333f813d6376b2be87c5a
-    projectPath: Library\Artifacts\d4\d4fb3aa8cbd333f813d6376b2be87c5a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Coronavirus\Library\Artifacts\e0\e0b88e15d747efc77a6237a7e1877d01
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\Artifacts\e0\e0b88e15d747efc77a6237a7e1877d01
-    projectPath: Library\Artifacts\e0\e0b88e15d747efc77a6237a7e1877d01
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Coronavirus\Library\Artifacts\ff\ffd8914e0ccda982a0c31023555f979d
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\Artifacts\ff\ffd8914e0ccda982a0c31023555f979d
-    projectPath: Library\Artifacts\ff\ffd8914e0ccda982a0c31023555f979d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Coronavirus\Library\EditorInstance.json
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\EditorInstance.json
-    projectPath: Library\EditorInstance.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\gfu\cache\gitstatusentries.yaml
-    projectPath: Library\gfu\cache\gitstatusentries.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\gfu\cache\gittrackingstatus.yaml
-    projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Coronavirus\Library\gfu\cache\gituser.yaml
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Library\gfu\cache\gituser.yaml
-    projectPath: Library\gfu\cache\gituser.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -124,15 +46,3 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Coronavirus\Temp\UnityLockfile
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Temp\UnityLockfile
-    projectPath: Temp\UnityLockfile
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Coronavirus\Temp\workerlic
-    fullPath: C:\Users\clopb\Desktop\ProyectoUnity\Coronavirus\Temp\workerlic
-    projectPath: Temp\workerlic
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
