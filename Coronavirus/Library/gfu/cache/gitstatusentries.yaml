@@ -1,0 +1,492 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2022-01-27T18:01:41.421+01:00
+  initializedAtString: 2022-01-27T18:01:40.212+01:00
+  entries:
+  - path: Coronavirus\.vs\Coronavirus\v16\.suo
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\.vs\Coronavirus\v16\.suo
+    projectPath: .vs\Coronavirus\v16\.suo
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\ArtifactDB
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\Artifacts\01\018cc6ca123531b67cce5696e0070f02
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\01\018cc6ca123531b67cce5696e0070f02
+    projectPath: Library\Artifacts\01\018cc6ca123531b67cce5696e0070f02
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\0b\0b0b062dde6c850abd3f6c94e0b932b1
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\0b\0b0b062dde6c850abd3f6c94e0b932b1
+    projectPath: Library\Artifacts\0b\0b0b062dde6c850abd3f6c94e0b932b1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\14\14666bf19e5e1fb774b0c051261521a5
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\14\14666bf19e5e1fb774b0c051261521a5
+    projectPath: Library\Artifacts\14\14666bf19e5e1fb774b0c051261521a5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\16\165a165cec0b4f9a3524f73ae3a27be9
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\16\165a165cec0b4f9a3524f73ae3a27be9
+    projectPath: Library\Artifacts\16\165a165cec0b4f9a3524f73ae3a27be9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\19\19d6a8c4fc3b867f3fcbb27cb72386a5
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\19\19d6a8c4fc3b867f3fcbb27cb72386a5
+    projectPath: Library\Artifacts\19\19d6a8c4fc3b867f3fcbb27cb72386a5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\21\21e200e0ad03df8d9b3ebe2b3d61f938
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\21\21e200e0ad03df8d9b3ebe2b3d61f938
+    projectPath: Library\Artifacts\21\21e200e0ad03df8d9b3ebe2b3d61f938
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\23\2383e01414d6a295403aa402048bfd39
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\23\2383e01414d6a295403aa402048bfd39
+    projectPath: Library\Artifacts\23\2383e01414d6a295403aa402048bfd39
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\26\26b920ba5e173e17ee259a9d8b49b82a
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\26\26b920ba5e173e17ee259a9d8b49b82a
+    projectPath: Library\Artifacts\26\26b920ba5e173e17ee259a9d8b49b82a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\29\294ccd0a8a0c5e20313747a8c8665368
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\29\294ccd0a8a0c5e20313747a8c8665368
+    projectPath: Library\Artifacts\29\294ccd0a8a0c5e20313747a8c8665368
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\2d\2d5f3e71d5fbc1bc9a7517dc1a9fc7e2
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\2d\2d5f3e71d5fbc1bc9a7517dc1a9fc7e2
+    projectPath: Library\Artifacts\2d\2d5f3e71d5fbc1bc9a7517dc1a9fc7e2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\38\3884dbb3cc3bc782d7bffa076fb80c3b
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\38\3884dbb3cc3bc782d7bffa076fb80c3b
+    projectPath: Library\Artifacts\38\3884dbb3cc3bc782d7bffa076fb80c3b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\42\42e26ef4e02fb8f393eefdbd20779ccc
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\42\42e26ef4e02fb8f393eefdbd20779ccc
+    projectPath: Library\Artifacts\42\42e26ef4e02fb8f393eefdbd20779ccc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\44\4495b9a82addb572f92b70fb19b55ffa
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\44\4495b9a82addb572f92b70fb19b55ffa
+    projectPath: Library\Artifacts\44\4495b9a82addb572f92b70fb19b55ffa
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\45\45d7562668d17d9623262b5b965cfd67
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\45\45d7562668d17d9623262b5b965cfd67
+    projectPath: Library\Artifacts\45\45d7562668d17d9623262b5b965cfd67
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\47\477847f35bb028b169e916ca8961cb1b
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\47\477847f35bb028b169e916ca8961cb1b
+    projectPath: Library\Artifacts\47\477847f35bb028b169e916ca8961cb1b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\49\49c45e0ee2ae6e347220d64e4b1eb0fb
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\49\49c45e0ee2ae6e347220d64e4b1eb0fb
+    projectPath: Library\Artifacts\49\49c45e0ee2ae6e347220d64e4b1eb0fb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\4b\4ba89a7e433cb4e943119d2a77c28b86
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\4b\4ba89a7e433cb4e943119d2a77c28b86
+    projectPath: Library\Artifacts\4b\4ba89a7e433cb4e943119d2a77c28b86
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\4f\4fe3621fd88a7149b148a5781440760b
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\4f\4fe3621fd88a7149b148a5781440760b
+    projectPath: Library\Artifacts\4f\4fe3621fd88a7149b148a5781440760b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\51\5157ca72f2412653e6d04521f3859afa
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\51\5157ca72f2412653e6d04521f3859afa
+    projectPath: Library\Artifacts\51\5157ca72f2412653e6d04521f3859afa
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\65\656902162db220af47253173bc9f72b7
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\65\656902162db220af47253173bc9f72b7
+    projectPath: Library\Artifacts\65\656902162db220af47253173bc9f72b7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\69\69337b002c7911f418dd3c18b282813d
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\69\69337b002c7911f418dd3c18b282813d
+    projectPath: Library\Artifacts\69\69337b002c7911f418dd3c18b282813d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\6c\6c3511359793d8b49196f15444decc3a
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\6c\6c3511359793d8b49196f15444decc3a
+    projectPath: Library\Artifacts\6c\6c3511359793d8b49196f15444decc3a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\71\713957bda996d0b53bff79c6449685af
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\71\713957bda996d0b53bff79c6449685af
+    projectPath: Library\Artifacts\71\713957bda996d0b53bff79c6449685af
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\77\77e6ddee3bfabf2412981488eb033825
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\77\77e6ddee3bfabf2412981488eb033825
+    projectPath: Library\Artifacts\77\77e6ddee3bfabf2412981488eb033825
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\7b\7bce27fd004f82c6c19ba7216a85f4a1
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\7b\7bce27fd004f82c6c19ba7216a85f4a1
+    projectPath: Library\Artifacts\7b\7bce27fd004f82c6c19ba7216a85f4a1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\7e\7ed6aafd0015e397c4f09bef09c31d5a
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\7e\7ed6aafd0015e397c4f09bef09c31d5a
+    projectPath: Library\Artifacts\7e\7ed6aafd0015e397c4f09bef09c31d5a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\9b\9b87d0cab5538667e5d110f997a9675b
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\9b\9b87d0cab5538667e5d110f997a9675b
+    projectPath: Library\Artifacts\9b\9b87d0cab5538667e5d110f997a9675b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\9d\9d0c8115c16fb6c1e4517137dad14a92
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\9d\9d0c8115c16fb6c1e4517137dad14a92
+    projectPath: Library\Artifacts\9d\9d0c8115c16fb6c1e4517137dad14a92
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\a1\a11bbf1d48e8e172c9ec0d1d09750ca0
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\a1\a11bbf1d48e8e172c9ec0d1d09750ca0
+    projectPath: Library\Artifacts\a1\a11bbf1d48e8e172c9ec0d1d09750ca0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\a1\a1e3cfa2a485c6d022d7299e848c6e88
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\a1\a1e3cfa2a485c6d022d7299e848c6e88
+    projectPath: Library\Artifacts\a1\a1e3cfa2a485c6d022d7299e848c6e88
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\a7\a736edfcc0be8a10b2ffefb3acfc7f26
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\a7\a736edfcc0be8a10b2ffefb3acfc7f26
+    projectPath: Library\Artifacts\a7\a736edfcc0be8a10b2ffefb3acfc7f26
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\a9\a9a7f0fd1b4e5d788634d63863fa529c
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\a9\a9a7f0fd1b4e5d788634d63863fa529c
+    projectPath: Library\Artifacts\a9\a9a7f0fd1b4e5d788634d63863fa529c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\ab\abafbb9ba70e163ad81c6bc4e977724c
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\ab\abafbb9ba70e163ad81c6bc4e977724c
+    projectPath: Library\Artifacts\ab\abafbb9ba70e163ad81c6bc4e977724c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\b1\b12eaab8e18cf831b262957fd8cef341
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\b1\b12eaab8e18cf831b262957fd8cef341
+    projectPath: Library\Artifacts\b1\b12eaab8e18cf831b262957fd8cef341
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\b3\b3144ab95899909a9bf5a8b2c76624c1
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\b3\b3144ab95899909a9bf5a8b2c76624c1
+    projectPath: Library\Artifacts\b3\b3144ab95899909a9bf5a8b2c76624c1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\b4\b439d406ee0bd342d621d0dd17748c3c
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\b4\b439d406ee0bd342d621d0dd17748c3c
+    projectPath: Library\Artifacts\b4\b439d406ee0bd342d621d0dd17748c3c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\ba\bab605f89b91cd9fa7cbfc0aa4823a44
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\ba\bab605f89b91cd9fa7cbfc0aa4823a44
+    projectPath: Library\Artifacts\ba\bab605f89b91cd9fa7cbfc0aa4823a44
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\ba\bae83d912a4bb3da4283d14bdec13f0e
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\ba\bae83d912a4bb3da4283d14bdec13f0e
+    projectPath: Library\Artifacts\ba\bae83d912a4bb3da4283d14bdec13f0e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Coronavirus\Library\Artifacts\bc\bc36e84b68cc685628a3f67e94ddfd42
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\bc\bc36e84b68cc685628a3f67e94ddfd42
+    projectPath: Library\Artifacts\bc\bc36e84b68cc685628a3f67e94ddfd42
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\bc\bc55ca2f99c937f0bac3fcf322617ed8
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\bc\bc55ca2f99c937f0bac3fcf322617ed8
+    projectPath: Library\Artifacts\bc\bc55ca2f99c937f0bac3fcf322617ed8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\bc\bc90954658fb87976fe0289c4a3c43fe
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\bc\bc90954658fb87976fe0289c4a3c43fe
+    projectPath: Library\Artifacts\bc\bc90954658fb87976fe0289c4a3c43fe
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\bd\bd4965518095dd9df133ffa022d073f2
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\bd\bd4965518095dd9df133ffa022d073f2
+    projectPath: Library\Artifacts\bd\bd4965518095dd9df133ffa022d073f2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\be\be6ded1be33b53b55bd7ba7cea8e3cba
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\be\be6ded1be33b53b55bd7ba7cea8e3cba
+    projectPath: Library\Artifacts\be\be6ded1be33b53b55bd7ba7cea8e3cba
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\c9\c9837e654ecfc3800421eaa5a40dc64b
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\c9\c9837e654ecfc3800421eaa5a40dc64b
+    projectPath: Library\Artifacts\c9\c9837e654ecfc3800421eaa5a40dc64b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\d5\d580e1ee35f1a1817d1ba88e6473fe5d
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\d5\d580e1ee35f1a1817d1ba88e6473fe5d
+    projectPath: Library\Artifacts\d5\d580e1ee35f1a1817d1ba88e6473fe5d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\d8\d84dc82ebd2041f18d2845c4b9d722cc
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\d8\d84dc82ebd2041f18d2845c4b9d722cc
+    projectPath: Library\Artifacts\d8\d84dc82ebd2041f18d2845c4b9d722cc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\e6\e63c77c864618c634e630c5deb6bd058
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\e6\e63c77c864618c634e630c5deb6bd058
+    projectPath: Library\Artifacts\e6\e63c77c864618c634e630c5deb6bd058
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\ec\ec94e8de02d7efdad451abd19701d0dc
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\ec\ec94e8de02d7efdad451abd19701d0dc
+    projectPath: Library\Artifacts\ec\ec94e8de02d7efdad451abd19701d0dc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\f3\f30df2780a92026f2d76d8d5848bebb1
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\f3\f30df2780a92026f2d76d8d5848bebb1
+    projectPath: Library\Artifacts\f3\f30df2780a92026f2d76d8d5848bebb1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\f3\f327abedea2fa408c11202908b90cbfb
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\f3\f327abedea2fa408c11202908b90cbfb
+    projectPath: Library\Artifacts\f3\f327abedea2fa408c11202908b90cbfb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\f9\f90ec7b72a63297703fe5dfd4bac49e4
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\f9\f90ec7b72a63297703fe5dfd4bac49e4
+    projectPath: Library\Artifacts\f9\f90ec7b72a63297703fe5dfd4bac49e4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\fa\faeb1597beda458381bef89c72e00e52
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\fa\faeb1597beda458381bef89c72e00e52
+    projectPath: Library\Artifacts\fa\faeb1597beda458381bef89c72e00e52
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\fb\fbdf978246902a159f06f9c2756a6221
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\fb\fbdf978246902a159f06f9c2756a6221
+    projectPath: Library\Artifacts\fb\fbdf978246902a159f06f9c2756a6221
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\Artifacts\fe\fe96a5d2944b3178a50945a752dcf949
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\Artifacts\fe\fe96a5d2944b3178a50945a752dcf949
+    projectPath: Library\Artifacts\fe\fe96a5d2944b3178a50945a752dcf949
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\EditorInstance.json
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Library\expandedItems
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\PackageManager\ProjectCache
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\PackageManager\ProjectCache
+    projectPath: Library\PackageManager\ProjectCache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\PackageManager\ProjectCache.md5
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\PackageManager\ProjectCache.md5
+    projectPath: Library\PackageManager\ProjectCache.md5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\SourceAssetDB
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Library\StateCache\SceneView\8c\8cd7c613bf844de3b80696e27a479d5e.json
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Library\StateCache\SceneView\8c\8cd7c613bf844de3b80696e27a479d5e.json
+    projectPath: Library\StateCache\SceneView\8c\8cd7c613bf844de3b80696e27a479d5e.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Logs\AssetImportWorker0.log
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Logs\AssetImportWorker0.log
+    projectPath: Logs\AssetImportWorker0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Coronavirus\Logs\AssetImportWorker0-prev.log
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Logs\AssetImportWorker0-prev.log
+    projectPath: Logs\AssetImportWorker0-prev.log
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Logs\shadercompiler-AssetImportWorker0.log
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Logs\shadercompiler-AssetImportWorker0.log
+    projectPath: Logs\shadercompiler-AssetImportWorker0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Coronavirus\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Coronavirus\Temp\UnityLockfile
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Coronavirus\Temp\workerlic
+    fullPath: C:\Users\clopb\Desktop\Unity\ProyectoUnity\Coronavirus\Temp\workerlic
+    projectPath: Temp\workerlic
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
