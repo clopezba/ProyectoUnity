@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-01-27T18:01:40.839+01:00
-  initializedAtString: 2022-01-27T18:01:40.824+01:00
+  lastUpdatedAtString: 2022-01-27T18:43:35.694+01:00
+  initializedAtString: 2022-01-27T18:43:35.682+01:00
   localBranches:
   - name: master
     tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
     tracking: '[None]'
-  - name: origin/master
+  - name: ciudad2D/master
     tracking: '[None]'
   - name: Coronavirus/master
     tracking: '[None]'
-  - name: ciudad2D/master
+  - name: coronavirus-attack/master
     tracking: '[None]'
   - name: free_character/master
     tracking: '[None]'
@@ -33,35 +33,42 @@ MonoBehaviour:
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/clopezba/Unity.git
-    login: 
-    user: 
-    host: 
-    function: 0
-    token: 
-  - name: Coronavirus
-    url: https://github.com/clopezba/Unity.git
+    url: https://github.com/clopezba/ProyectoUnity.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   - name: ciudad2D
-    url: https://github.com/clopezba/Unity.git
+    url: https://github.com/clopezba/ProyectoUnity.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  - name: Coronavirus
+    url: https://github.com/clopezba/ProyectoUnity.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  - name: coronavirus-attack
+    url: https://github.com/clopezba/ProyectoUnity.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   - name: free_character
-    url: https://github.com/clopezba/Unity.git
+    url: https://github.com/clopezba/ProyectoUnity.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   - name: girlfreechracter
-    url: https://github.com/clopezba/Unity.git
+    url: https://github.com/clopezba/ProyectoUnity.git
     login: 
     user: 
     host: 
@@ -74,18 +81,20 @@ MonoBehaviour:
     - name: master
       remote:
         name: origin
-        url: https://github.com/clopezba/Unity.git
+        url: https://github.com/clopezba/ProyectoUnity.git
       trackingBranch: master
   remoteConfigBranches:
     keys:
     - origin
-    - Coronavirus
     - ciudad2D
+    - Coronavirus
+    - coronavirus-attack
     - free_character
     - girlfreechracter
     subKeys:
     - Values:
       - HEAD
+    - Values:
       - master
     - Values:
       - master
@@ -100,52 +109,56 @@ MonoBehaviour:
       - name: HEAD
         remote:
           name: origin
-          url: https://github.com/clopezba/Unity.git
-        trackingBranch: 
-      - name: master
-        remote:
-          name: origin
-          url: https://github.com/clopezba/Unity.git
-        trackingBranch: 
-    - Values:
-      - name: master
-        remote:
-          name: Coronavirus
-          url: https://github.com/clopezba/Unity.git
+          url: https://github.com/clopezba/ProyectoUnity.git
         trackingBranch: 
     - Values:
       - name: master
         remote:
           name: ciudad2D
-          url: https://github.com/clopezba/Unity.git
+          url: https://github.com/clopezba/ProyectoUnity.git
+        trackingBranch: 
+    - Values:
+      - name: master
+        remote:
+          name: Coronavirus
+          url: https://github.com/clopezba/ProyectoUnity.git
+        trackingBranch: 
+    - Values:
+      - name: master
+        remote:
+          name: coronavirus-attack
+          url: https://github.com/clopezba/ProyectoUnity.git
         trackingBranch: 
     - Values:
       - name: master
         remote:
           name: free_character
-          url: https://github.com/clopezba/Unity.git
+          url: https://github.com/clopezba/ProyectoUnity.git
         trackingBranch: 
     - Values:
       - name: master
         remote:
           name: girlfreechracter
-          url: https://github.com/clopezba/Unity.git
+          url: https://github.com/clopezba/ProyectoUnity.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
-    - Coronavirus
     - ciudad2D
+    - Coronavirus
+    - coronavirus-attack
     - free_character
     - girlfreechracter
     values:
     - name: origin
-      url: https://github.com/clopezba/Unity.git
-    - name: Coronavirus
-      url: https://github.com/clopezba/Unity.git
+      url: https://github.com/clopezba/ProyectoUnity.git
     - name: ciudad2D
-      url: https://github.com/clopezba/Unity.git
+      url: https://github.com/clopezba/ProyectoUnity.git
+    - name: Coronavirus
+      url: https://github.com/clopezba/ProyectoUnity.git
+    - name: coronavirus-attack
+      url: https://github.com/clopezba/ProyectoUnity.git
     - name: free_character
-      url: https://github.com/clopezba/Unity.git
+      url: https://github.com/clopezba/ProyectoUnity.git
     - name: girlfreechracter
-      url: https://github.com/clopezba/Unity.git
+      url: https://github.com/clopezba/ProyectoUnity.git
