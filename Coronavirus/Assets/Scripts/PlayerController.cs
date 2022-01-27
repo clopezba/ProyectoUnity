@@ -13,24 +13,10 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    //void Update()
-    //{
-    //    if (Input.GetKey(KeyCode.RightArrow))
-    //    {
-    //        rb2D.AddForce(new Vector2(fuerza, 0), ForceMode2D.Impulse);
-    //    }
-    //    if (Input.GetKey(KeyCode.LeftArrow))
-    //    {
-    //        rb2D.AddForce(new Vector2(-1 * fuerza, 0), ForceMode2D.Impulse);
-    //    }
-    //    if (Input.GetButton("Jump"))
-    //    {
-    //        rb2D.AddForce(transform.up * fuerza * 100);
-    //    }
-
-
-
-    //}
+    void Update() 
+    { 
+            
+    }
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.RightArrow))
