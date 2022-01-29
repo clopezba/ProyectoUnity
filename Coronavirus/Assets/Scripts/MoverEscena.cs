@@ -5,19 +5,20 @@ using UnityEngine;
 public class MoverEscena : MonoBehaviour
 {
     public float tamanyoEscena;
-    private Camera camara;
+    private Camera mainCamera;
     // Start is called before the first frame update
     void Start()
     {
-        camara = Camera.main; //Selecciona la cámara principal
+        mainCamera = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(tamanyoEscena <= (camara.transform.position - transform.position).magnitude) //Calcula distancia entre escena y cámara para repetir la escena si es necesario
+        Vector3 distancia = mainCamera.transform.position - transform.position;
+        if (tamanyoEscena < distancia.magnitude)
         {
-            transform.position = new Vector3(camara.transform.position.x, transform.position.y);
+            transform.position = new Vector3(mainCamera.transform.position.x + 20.0f, transform.position.y, transform.position.z);
         }
     }
 }
