@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2D;
-    public float fuerza = 0.5f;
+    public float fuerza;
+    bool saltando;
     // Start is called before the first frame update
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        saltando = false;
     }
 
     // Update is called once per frame
@@ -19,19 +21,39 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) ||Input.GetKey(KeyCode.D))
         {
-            rb2D.AddForce(new Vector2(fuerza, 0), ForceMode2D.Impulse);
+            transform.Translate(new Vector3(0.1f, 0.0f));
             GetComponent<SpriteRenderer>().flipX = false;
+            //TODO - Animación correr
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            rb2D.AddForce(new Vector2(-1 * fuerza, 0), ForceMode2D.Impulse);
+            transform.Translate(new Vector3(-0.1f, 0.0f));
             GetComponent<SpriteRenderer>().flipX = true;
+            //TODO - Animación correr
         }
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && saltando == false)
         {
-            rb2D.AddForce(transform.up * fuerza * 100);
+            //TODO - Animación salto
+            rb2D.AddForce(transform.up * fuerza, ForceMode2D.Impulse);
+            saltando = true;
+        }
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Suelo")
+        {
+            saltando = false;
+        }
+        if(col.gameObject.tag == "Coronavirus")
+        {
+            col.gameObject.SetActive(false);
+            Destroy(col.gameObject, 0.5f);
+            
+            //TODO - Animación muerte
+            gameObject.SetActive(false);
+            Destroy(gameObject, 0.5f);
         }
     }
 
