@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoverCamara : MonoBehaviour
+public class EliminarMascarillas : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class MoverCamara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Mover la cámara
-        transform.Translate(new Vector3(0.01f, 0.0f));
+        //Elimina las mascarillas cuando salen de la cámara
+        Destroy(gameObject, 10.5f);
     }
 }

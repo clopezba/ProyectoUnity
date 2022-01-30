@@ -17,6 +17,7 @@ public class EliminadorCoronavirus : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
+        //Eliminar objeto Coronavirus al salir de la cámara
         if(col.gameObject.tag == "Coronavirus")
         {
             col.gameObject.SetActive(false);
