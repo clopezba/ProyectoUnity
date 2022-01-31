@@ -4,16 +4,30 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D rb2D;
+    private Rigidbody2D rb2D;
+    public Animator animator;
     public float fuerza;
-    bool saltando;
-    public int vidas;
+    private bool saltando;
+    private int vidas;
+
+    public int Vidas
+    {
+        get { return vidas; }
+        set { vidas = value; }
+    }
+
     private int mascarillas;
+    public int Mascarillas
+    {
+        get { return mascarillas; }
+        set { mascarillas = value; }
+    }
     // Start is called before the first frame update
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         saltando = false;
+        vidas = 3;
         mascarillas = 0;
     }
 
@@ -24,24 +38,25 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
+        animator.SetBool("Corriendo", false);
+        animator.SetBool("Saltando", saltando);
         //Mover a izquierda y derecha
         if (Input.GetKey(KeyCode.RightArrow) ||Input.GetKey(KeyCode.D))
         {
             transform.Translate(new Vector3(0.1f, 0.0f));
             GetComponent<SpriteRenderer>().flipX = false;
-            //TODO - Animación correr
+            animator.SetBool("Corriendo", true);
         }
         else if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.Translate(new Vector3(-0.1f, 0.0f));
             GetComponent<SpriteRenderer>().flipX = true;
-            //TODO - Animación correr
+            animator.SetBool("Corriendo", true);
         }
-
+        
         //Saltar
         if (Input.GetButton("Jump") && saltando == false)
         {
-            //TODO - Animación salto
             rb2D.AddForce(transform.up * fuerza, ForceMode2D.Impulse);
             saltando = true;
         }
@@ -60,14 +75,14 @@ public class PlayerController : MonoBehaviour
         {
             col.gameObject.SetActive(false);
             Destroy(col.gameObject, 0.5f);
-
+            
             vidas--;
             Debug.Log("Te quedan " + vidas + " vidas.");
             if(vidas <= 0)
             {
-                //TODO - Animación muerte
-                gameObject.SetActive(false);
-                Destroy(gameObject, 0.5f);
+                animator.SetTrigger("Daño");
+                //gameObject.SetActive(false);
+                Destroy(gameObject, 1.5f);
                 Debug.Log("¡Game over!");
 
                 //Comprobar y guardar nuevos records
