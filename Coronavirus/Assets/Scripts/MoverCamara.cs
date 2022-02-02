@@ -14,6 +14,6 @@ public class MoverCamara : MonoBehaviour
     void Update()
     {
         //Mover la cámara
-        transform.Translate(new Vector3(0.01f, 0.0f));
+        transform.Translate(new Vector3(0.1f*Time.deltaTime, 0.0f));
     }
 }

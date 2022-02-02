@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5573487809510812683}
   - component: {fileID: 1685411722231912242}
+  - component: {fileID: 5904799224982046043}
   m_Layer: 0
   m_Name: Mascarillas
   m_TagString: Mascarilla
@@ -44,6 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88ba762a49453a429e504829846b87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5904799224982046043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033635635654595345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d8b7bf588b9dd4da382c6861b135d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objeto: {fileID: 4033635635654595345}
 --- !u!1 &8414716277365984648
 GameObject:
   m_ObjectHideFlags: 0

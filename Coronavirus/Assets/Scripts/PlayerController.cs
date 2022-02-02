@@ -43,13 +43,13 @@ public class PlayerController : MonoBehaviour
         //Mover a izquierda y derecha
         if (Input.GetKey(KeyCode.RightArrow) ||Input.GetKey(KeyCode.D))
         {
-            transform.Translate(new Vector3(0.1f, 0.0f));
+            transform.Translate(new Vector3(3.0f*Time.deltaTime, 0.0f));
             GetComponent<SpriteRenderer>().flipX = false;
             animator.SetBool("Corriendo", true);
         }
         else if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            transform.Translate(new Vector3(-0.1f, 0.0f));
+            transform.Translate(new Vector3(-3.0f*Time.deltaTime, 0.0f));
             GetComponent<SpriteRenderer>().flipX = true;
             animator.SetBool("Corriendo", true);
         }
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
             
             vidas--;
             Debug.Log("Te quedan " + vidas + " vidas.");
-            if(vidas <= 0)
+            if(vidas == 0)
             {
                 animator.SetTrigger("Daño");
                 //gameObject.SetActive(false);

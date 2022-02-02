@@ -16,7 +16,14 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        vidas_txt.text = "X " + jugador.Vidas.ToString();
+        if(jugador.Vidas >= 0)
+        {
+            vidas_txt.text = "X " + jugador.Vidas.ToString();
+        } else
+        {
+            vidas_txt.text = "X 0";
+        }
+        
         mascarilla_txt.text = "X " + jugador.Mascarillas.ToString();
     }
 }
