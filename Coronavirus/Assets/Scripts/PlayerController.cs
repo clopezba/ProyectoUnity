@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -90,6 +91,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("Daño");
                 Destroy(gameObject, 1.5f);
                 Debug.Log("¡Game over!");
+                SceneManager.LoadScene("GameOver");
 
                 //Comprobar y guardar nuevos records
                 int recordUltimo = PlayerPrefs.GetInt("Mascarillas"); //PlayerPrefs guarda preferencias entre partidas
