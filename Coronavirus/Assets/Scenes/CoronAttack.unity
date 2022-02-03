@@ -2125,6 +2125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mascarilla_original: {fileID: 4033635635654595345, guid: f7d5f139e6df86a4ca154d69f6d7cfd5, type: 3}
   probabilidadAparicion: 0.3
+  cantidad: 4
 --- !u!1 &1483608711
 GameObject:
   m_ObjectHideFlags: 0

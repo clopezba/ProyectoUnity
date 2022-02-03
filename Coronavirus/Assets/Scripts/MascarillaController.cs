@@ -14,6 +14,6 @@ public class MascarillaController : MonoBehaviour
     void Update()
     {
         //Movimiento mascarillas
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.7f * Time.deltaTime, 0.0f), ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.5f * Time.deltaTime, 0.0f), ForceMode2D.Impulse);
     }
 }

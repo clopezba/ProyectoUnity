@@ -28,7 +28,7 @@ public class GeneradorCoronavirus : MonoBehaviour
         {
             if(GameObject.FindGameObjectsWithTag("Coronavirus").Length < cantidad)
             {
-                GameObject.Instantiate(coronavirus_original, transform.position, transform.rotation); //Saldrá el objeto en la posición y rotación del generador
+                Instantiate(coronavirus_original, transform.position, transform.rotation); //Saldrá el objeto en la posición y rotación del generador
             }
             
         }

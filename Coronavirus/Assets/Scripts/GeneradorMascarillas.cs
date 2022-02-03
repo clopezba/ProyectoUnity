@@ -6,6 +6,7 @@ public class GeneradorMascarillas : MonoBehaviour
 {
     public GameObject mascarilla_original;
     public float probabilidadAparicion;
+    public int cantidad;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,11 @@ public class GeneradorMascarillas : MonoBehaviour
         float random = Random.Range(0.0f, 200.0f); //Número aleatorio entre 0 y 100
         if (random < probabilidadAparicion)
         {
-            GameObject.Instantiate(mascarilla_original, transform.position, transform.rotation); //Saldrá el objeto en la posición y rotación del generador
+            if (GameObject.FindGameObjectsWithTag("Mascarilla").Length < cantidad)
+            {
+                 Instantiate(mascarilla_original, transform.position, transform.rotation); //Saldrá el objeto en la posición y rotación del generador
+            }
+               
         }
     }
     
