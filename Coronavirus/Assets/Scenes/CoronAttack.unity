@@ -2124,7 +2124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objeto_original: {fileID: 4033635635654595345, guid: f7d5f139e6df86a4ca154d69f6d7cfd5, type: 3}
-  probabilidadAparicion: 0.4
+  probabilidadAparicion: 0.3
 --- !u!1 &1483608711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,7 +2482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objeto_original: {fileID: 7094940964283994208, guid: 82542026385b4124c874995701f152ba, type: 3}
-  probabilidadAparicion: 0.3
+  probabilidadAparicion: 0.1
 --- !u!4 &1561882612
 Transform:
   m_ObjectHideFlags: 0
