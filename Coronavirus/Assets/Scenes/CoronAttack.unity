@@ -844,7 +844,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!95 &671079123
 Animator:
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c672cea05b7ebbc48ba31cb0c1ab7961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto_original: {fileID: 4033635635654595345, guid: f7d5f139e6df86a4ca154d69f6d7cfd5, type: 3}
+  mascarilla_original: {fileID: 4033635635654595345, guid: f7d5f139e6df86a4ca154d69f6d7cfd5, type: 3}
   probabilidadAparicion: 0.3
 --- !u!1 &1483608711
 GameObject:
@@ -2478,11 +2478,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1561882610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c672cea05b7ebbc48ba31cb0c1ab7961, type: 3}
+  m_Script: {fileID: 11500000, guid: 06e079ce70a6b8f4d835598ef6905172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto_original: {fileID: 7094940964283994208, guid: 82542026385b4124c874995701f152ba, type: 3}
-  probabilidadAparicion: 0.1
+  coronavirus_original: {fileID: 7094940964283994208, guid: 82542026385b4124c874995701f152ba, type: 3}
+  probabilidadAparicion: 0.2
+  cantidad: 2
 --- !u!4 &1561882612
 Transform:
   m_ObjectHideFlags: 0

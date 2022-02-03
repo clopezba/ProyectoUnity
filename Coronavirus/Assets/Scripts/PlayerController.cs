@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("Daño");
                 Destroy(gameObject, 1.5f);
                 Debug.Log("¡Game over!");
-                SceneManager.LoadScene("GameOver");
+                //SceneManager.LoadScene("GameOver");
 
                 //Comprobar y guardar nuevos records
                 int recordUltimo = PlayerPrefs.GetInt("Mascarillas"); //PlayerPrefs guarda preferencias entre partidas

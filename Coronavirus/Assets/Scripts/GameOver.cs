@@ -8,19 +8,19 @@ public class GameOver : MonoBehaviour
 {
     public Text record_txt;
     public Text actual_txt;
-    private PlayerController jugador;
+    //private PlayerController jugador;
 
     // Start is called before the first frame update
     void Start()
     {
-        jugador = gameObject.GetComponent<PlayerController>();
+        //jugador = gameObject.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        record_txt.text = PlayerPrefs.GetInt("Mascarillas").ToString();
-        actual_txt.text = jugador.Mascarillas.ToString();
+        record_txt.text = "Record ............... " + PlayerPrefs.GetInt("Mascarillas").ToString();
+        //actual_txt.text = jugador.Mascarillas.ToString();
     }
 
     public void Jugar()

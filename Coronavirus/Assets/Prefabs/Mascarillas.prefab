@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5573487809510812683}
   - component: {fileID: 1685411722231912242}
-  - component: {fileID: 5904799224982046043}
+  - component: {fileID: 437466014190278036}
+  - component: {fileID: 3416669211135637296}
   m_Layer: 0
   m_Name: Mascarillas
   m_TagString: Mascarilla
@@ -45,7 +46,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88ba762a49453a429e504829846b87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5904799224982046043
+--- !u!50 &437466014190278036
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033635635654595345}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 2
+--- !u!114 &3416669211135637296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,10 +76,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4033635635654595345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39d8b7bf588b9dd4da382c6861b135d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9899490cc1b2b9f439f4e55d810500c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto: {fileID: 4033635635654595345}
 --- !u!1 &8414716277365984648
 GameObject:
   m_ObjectHideFlags: 0
