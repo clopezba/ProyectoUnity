@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,10 +23,15 @@ public class PlayerController : MonoBehaviour
         get { return mascarillas; }
         set { mascarillas = value; }
     }
+
+    void Awake()
+    {
+        rb2D = GetComponent<Rigidbody2D>(); 
+        animator = GetComponent<Animator>();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
         saltando = false;
         vidas = 3;
         mascarillas = 0;
@@ -40,16 +46,18 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("Corriendo", false);
         animator.SetBool("Saltando", saltando);
+
+        float horizontal = Input.GetAxis("Horizontal");
         //Mover a izquierda y derecha
-        if (Input.GetKey(KeyCode.RightArrow) ||Input.GetKey(KeyCode.D))
+        if (horizontal > 0.0f)
         {
-            transform.Translate(new Vector3(3.0f*Time.deltaTime, 0.0f));
+            rb2D.AddForce(new Vector2(0.5f, 0.0f), ForceMode2D.Impulse);
             GetComponent<SpriteRenderer>().flipX = false;
             animator.SetBool("Corriendo", true);
         }
-        else if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        else if(horizontal < 0.0f)
         {
-            transform.Translate(new Vector3(-3.0f*Time.deltaTime, 0.0f));
+            rb2D.AddForce(new Vector2(-0.5f, 0.0f), ForceMode2D.Impulse);
             GetComponent<SpriteRenderer>().flipX = true;
             animator.SetBool("Corriendo", true);
         }
@@ -81,9 +89,9 @@ public class PlayerController : MonoBehaviour
             if(vidas == 0)
             {
                 animator.SetTrigger("Daño");
-                //gameObject.SetActive(false);
                 Destroy(gameObject, 1.5f);
                 Debug.Log("¡Game over!");
+                SceneManager.LoadScene("GameOver");
 
                 //Comprobar y guardar nuevos records
                 int recordUltimo = PlayerPrefs.GetInt("Mascarillas"); //PlayerPrefs guarda preferencias entre partidas

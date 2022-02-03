@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 17587060adde4364bbc97ff2ff21dfd0
+  - enabled: 1
     path: Assets/Scenes/CoronAttack.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 36150949db6c5e54989ef57807d41401
   m_configObjects: {}
