@@ -20,4 +20,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("CoronAttack");
     }
+
+    public void Salir()
+    {
+        Application.Quit();
+        Debug.Log("Has salido de la aplicación");
+    }
 }

@@ -31,4 +31,11 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Salir() 
+    {
+        Application.Quit();
+        Debug.Log("Has salido de la aplicación");
+    }
+    
 }
