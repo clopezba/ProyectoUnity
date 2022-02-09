@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         saltando = false;
-        vidas = 3;
+        vidas = 100;
         mascarillas = 0;
     }
 
