@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("Corriendo", false);
         animator.SetBool("Saltando", saltando);
+        animator.SetBool("Cayendo", false);
+
 
         float horizontal = Input.GetAxis("Horizontal");
         //Mover a izquierda y derecha
@@ -127,13 +129,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Alcantarilla")
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-            Destroy(gameObject, 5.0f);
+            animator.SetBool("Cayendo", true);
+            Destroy(gameObject, 1.5f);
+            StartCoroutine(espera());
+            SceneManager.LoadScene("GameOver");
         }
         
+    }
+
+    IEnumerator espera()
+    {
+        yield return new WaitForSeconds(30);
     }
 }
