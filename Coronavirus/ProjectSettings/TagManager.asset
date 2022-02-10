@@ -7,6 +7,7 @@ TagManager:
   - Suelo
   - Coronavirus
   - Mascarilla
+  - Alcantarilla
   layers:
   - Default
   - TransparentFX

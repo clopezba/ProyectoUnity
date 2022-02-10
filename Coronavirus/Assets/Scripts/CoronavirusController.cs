@@ -17,4 +17,5 @@ public class CoronavirusController : MonoBehaviour
         //Movimiento coronavirus
         GetComponent<Rigidbody2D>().AddForce(new Vector2(-12.0f*Time.deltaTime, 0.0f), ForceMode2D.Impulse);
     }
+   
 }

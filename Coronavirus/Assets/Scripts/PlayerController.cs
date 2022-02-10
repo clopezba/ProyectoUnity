@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
         {
             saltando = false;
         }
-
+        
         //Choque con Coronavirus - Menos vidas - Muerte
         if(col.gameObject.tag == "Coronavirus")
         {
@@ -127,4 +127,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Alcantarilla")
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+            Destroy(gameObject, 5.0f);
+        }
+        
+    }
 }
