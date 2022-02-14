@@ -79,9 +79,11 @@ public class PlayerController : MonoBehaviour
         {
             saltando = false;
         }
+
         
+
         //Choque con Coronavirus - Menos vidas - Muerte
-        if(col.gameObject.tag == "Coronavirus")
+        if (col.gameObject.tag == "Coronavirus")
         {
             col.gameObject.SetActive(false);
             Destroy(col.gameObject, 0.5f);
@@ -127,23 +129,20 @@ public class PlayerController : MonoBehaviour
             mascarillas++;
             Debug.Log("Mascarillas: " + mascarillas);
         }
+
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+
+    void OnCollisionStay2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Alcantarilla")
-        {
+        if (collision.gameObject.tag == "Alcantarilla")
+        {  
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-            animator.SetBool("Cayendo", true);
-            Destroy(gameObject, 1.5f);
-            StartCoroutine(espera());
+            Destroy(gameObject, 0.90f); 
             SceneManager.LoadScene("GameOver");
         }
-        
+
     }
 
-    IEnumerator espera()
-    {
-        yield return new WaitForSeconds(30);
-    }
+    
 }
