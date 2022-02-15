@@ -14,6 +14,6 @@ public class EliminarMascarillas : MonoBehaviour
     void Update()
     {
         //Elimina las mascarillas cuando salen de la cámara
-        Destroy(gameObject, 8.5f);
+        Destroy(gameObject, 10.5f);
     }
 }
