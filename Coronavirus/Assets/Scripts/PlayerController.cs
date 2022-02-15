@@ -36,12 +36,6 @@ public class PlayerController : MonoBehaviour
         vidas = 100;
         mascarillas = 0;
     }
-
-    // Update is called once per frame
-    void Update() 
-    { 
-            
-    }
     void FixedUpdate()
     {
         animator.SetBool("Corriendo", false);
@@ -79,9 +73,6 @@ public class PlayerController : MonoBehaviour
         {
             saltando = false;
         }
-
-        
-
         //Choque con Coronavirus - Menos vidas - Muerte
         if (col.gameObject.tag == "Coronavirus")
         {
@@ -129,20 +120,20 @@ public class PlayerController : MonoBehaviour
             mascarillas++;
             Debug.Log("Mascarillas: " + mascarillas);
         }
-
     }
-
-
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Alcantarilla")
-        {  
+        {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-            Destroy(gameObject, 0.90f); 
-            SceneManager.LoadScene("GameOver");
         }
-
     }
-
-    
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject, 1.5f);    
+    }
+    void OnDestroy()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
 }
