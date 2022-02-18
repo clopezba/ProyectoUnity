@@ -16,8 +16,10 @@ public class MascarillaController : MonoBehaviour
         //Movimiento mascarillas
         GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.5f * Time.deltaTime, 0.0f), ForceMode2D.Impulse);
     }
-    void OnBecameInvisible()
+
+    private void OnBecameInvisible()
     {
         Destroy(gameObject);
     }
+
 }

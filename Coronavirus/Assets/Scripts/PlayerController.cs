@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
         if(col.gameObject.tag == "Mascarilla")
         {
             col.gameObject.SetActive(false);
-            Destroy(col.gameObject, 0.5f);
+            Destroy(col.gameObject);
             mascarillas++;
             Debug.Log("Mascarillas: " + mascarillas);
         }
@@ -130,8 +130,7 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Daño");
             Destroy(gameObject, 1.5f);
             Debug.Log("¡Game over!");
-            SceneManager.LoadScene("GameOver");
-
+            
             //Comprobar y guardar nuevos records
             int recordUltimo = PlayerPrefs.GetInt("Mascarillas"); //PlayerPrefs guarda preferencias entre partidas
             if (PlayerPrefs.HasKey("Mascarillas") == false)

@@ -2609,7 +2609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coche: {fileID: 1589580445210288298, guid: 5ecd9204d3ddfbc4da5566f1df7236e8, type: 3}
-  probabilidadAparicion: 0.1
+  probabilidadAparicion: 0.2
+  cantidad: 1
 --- !u!1 &1519722732
 GameObject:
   m_ObjectHideFlags: 0

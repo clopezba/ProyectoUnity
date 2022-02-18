@@ -6,6 +6,7 @@ public class GeneradorCocheMini : MonoBehaviour
 {
     public GameObject coche;
     public float probabilidadAparicion;
+    public int cantidad;
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,11 @@ public class GeneradorCocheMini : MonoBehaviour
 
         if (random < probabilidadAparicion)
         {
-            Instantiate(coche, transform.position, transform.rotation); //Saldrá el objeto en la posición y rotación del generador
+            if (GameObject.FindGameObjectsWithTag("Coche").Length < cantidad)
+            {
+                Instantiate(coche, transform.position, transform.rotation); //Saldrá el objeto en la posición y rotación del generador
+            }
+                
         }
     }
 }
