@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         saltando = false;
-        vidas = 100;
+        vidas = 3;
         mascarillas = 0;
     }
     void FixedUpdate()
@@ -78,37 +78,21 @@ public class PlayerController : MonoBehaviour
         {
             col.gameObject.SetActive(false);
             Destroy(col.gameObject, 0.5f);
-            
-            vidas--;
-            Debug.Log("Te quedan " + vidas + " vidas.");
-            if(vidas == 0)
+            danyo();
+        }
+        //Choque con coche
+        if (col.gameObject.tag == "Coche")
+        {
+            if (!saltando)
             {
-                animator.SetTrigger("Daño");
-                Destroy(gameObject, 1.5f);
-                Debug.Log("¡Game over!");
-                SceneManager.LoadScene("GameOver");
-
-                //Comprobar y guardar nuevos records
-                int recordUltimo = PlayerPrefs.GetInt("Mascarillas"); //PlayerPrefs guarda preferencias entre partidas
-                if (PlayerPrefs.HasKey("Mascarillas") == false)
-                {
-                    //No hay record guardado
-                    PlayerPrefs.SetInt("Mascarillas", mascarillas);
-                    Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
-                    //TODO - Pantalla de nuevo record
-                }
-                else
-                {
-                    //Sí hay record guardado
-                    if(recordUltimo < mascarillas)
-                    {
-                        //Nuevo record
-                        PlayerPrefs.SetInt("Mascarillas", mascarillas);
-                        Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
-                    }
-                }
+                danyo();
+                Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+            } else
+            {
+                saltando = false;
             }
         }
+
     }
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -135,5 +119,38 @@ public class PlayerController : MonoBehaviour
     void OnDestroy()
     {
         SceneManager.LoadScene("GameOver");
+    }
+
+    private void danyo()
+    {
+        vidas--;
+        Debug.Log("Te quedan " + vidas + " vidas.");
+        if (vidas == 0)
+        {
+            animator.SetTrigger("Daño");
+            Destroy(gameObject, 1.5f);
+            Debug.Log("¡Game over!");
+            SceneManager.LoadScene("GameOver");
+
+            //Comprobar y guardar nuevos records
+            int recordUltimo = PlayerPrefs.GetInt("Mascarillas"); //PlayerPrefs guarda preferencias entre partidas
+            if (PlayerPrefs.HasKey("Mascarillas") == false)
+            {
+                //No hay record guardado
+                PlayerPrefs.SetInt("Mascarillas", mascarillas);
+                Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
+                //TODO - Pantalla de nuevo record
+            }
+            else
+            {
+                //Sí hay record guardado
+                if (recordUltimo < mascarillas)
+                {
+                    //Nuevo record
+                    PlayerPrefs.SetInt("Mascarillas", mascarillas);
+                    Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
+                }
+            }
+        }
     }
 }

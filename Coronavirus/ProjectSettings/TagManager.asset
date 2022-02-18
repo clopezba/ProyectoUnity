@@ -8,6 +8,8 @@ TagManager:
   - Coronavirus
   - Mascarilla
   - Alcantarilla
+  - Coche
+  - Limite
   layers:
   - Default
   - TransparentFX
