@@ -85,10 +85,7 @@ public class PlayerController : MonoBehaviour
         {
                 danyo();
                 Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-            } else
-            {
-                saltando = false;
-            }
+        }
         
 
     }
