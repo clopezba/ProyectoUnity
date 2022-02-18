@@ -81,17 +81,15 @@ public class PlayerController : MonoBehaviour
             danyo();
         }
         //Choque con coche
-        if (col.gameObject.tag == "Coche")
+        if (col.gameObject.tag == "Coche" && col.gameObject.tag == "Suelo")
         {
-            if (!saltando)
-            {
                 danyo();
                 Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
             } else
             {
                 saltando = false;
             }
-        }
+        
 
     }
     void OnTriggerEnter2D(Collider2D col)

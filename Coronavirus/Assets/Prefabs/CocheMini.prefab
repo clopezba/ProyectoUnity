@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 1281281804858889526}
   - component: {fileID: 1281281804858889527}
   - component: {fileID: 1281281804858889524}
+  - component: {fileID: 2421349886743806369}
   m_Layer: 0
   m_Name: CocheMini
   m_TagString: Coche
@@ -450,3 +451,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &2421349886743806369
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589580445210288298}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.7652633, y: -1.0361326}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.58, y: 3.27}
+    newSize: {x: 5.58, y: 3.27}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15712404, y: 0.95552206}
+  m_EdgeRadius: 0
