@@ -10,6 +10,15 @@ public class PlayerController : MonoBehaviour
     private bool saltando;
     private int vidas;
 
+    public AudioClip salto_clip;
+    public AudioClip danyo_clip;
+    public AudioClip coche_clip;
+    public AudioClip mascarilla_clip;
+    public AudioClip muerte_clip;
+    public AudioClip record_clip;
+
+    private AudioSource personajeAS;
+
     public int Vidas
     {
         get { return vidas; }
@@ -34,6 +43,7 @@ public class PlayerController : MonoBehaviour
         saltando = false;
         vidas = 3;
         mascarillas = 0;
+        personajeAS = GetComponent<AudioSource>();
     }
     void FixedUpdate()
     {
@@ -62,6 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             rb2D.AddForce(transform.up * fuerza, ForceMode2D.Impulse);
             saltando = true;
+            personajeAS.PlayOneShot(salto_clip);
         }
     }
     void OnCollisionEnter2D(Collision2D col)
@@ -75,6 +86,7 @@ public class PlayerController : MonoBehaviour
         //Choque con Coronavirus - Menos vidas - Muerte
         if (col.gameObject.tag == "Coronavirus")
         {
+            personajeAS.PlayOneShot(danyo_clip);
             col.gameObject.SetActive(false);
             Destroy(col.gameObject, 0.5f);
             danyo();
@@ -85,7 +97,7 @@ public class PlayerController : MonoBehaviour
         //Choque con mascarillas - Recolectar
         if(col.gameObject.tag == "Mascarilla")
         {
-            //col.gameObject.SetActive(false);
+            personajeAS.PlayOneShot(mascarilla_clip);
             Destroy(col.gameObject);
             mascarillas++;
             Debug.Log("Mascarillas: " + mascarillas);
@@ -93,6 +105,7 @@ public class PlayerController : MonoBehaviour
         //Choque con coche
         if (col.gameObject.tag == "Choque")
         {
+            personajeAS.PlayOneShot(coche_clip);
             danyo();
             StartCoroutine(choqueCoche());
         }
@@ -106,6 +119,7 @@ public class PlayerController : MonoBehaviour
     }
     void OnBecameInvisible()
     {
+        danyo();
         Destroy(gameObject, 1.5f);    
     }
     void OnDestroy()
@@ -119,6 +133,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Te quedan " + vidas + " vidas.");
         if (vidas == 0)
         {
+            personajeAS.PlayOneShot(muerte_clip);
             animator.SetTrigger("Daño");
             Destroy(gameObject, 1.5f);
             Debug.Log("¡Game over!");
@@ -128,6 +143,7 @@ public class PlayerController : MonoBehaviour
             if (PlayerPrefs.HasKey("Mascarillas") == false)
             {
                 //No hay record guardado
+                personajeAS.PlayOneShot(record_clip);
                 PlayerPrefs.SetInt("Mascarillas", mascarillas);
                 Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
                 //TODO - Pantalla de nuevo record
@@ -138,15 +154,22 @@ public class PlayerController : MonoBehaviour
                 if (recordUltimo < mascarillas)
                 {
                     //Nuevo record
+                    personajeAS.PlayOneShot(record_clip);
                     PlayerPrefs.SetInt("Mascarillas", mascarillas);
                     Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
                 }
             }
         }
+        GuardarDatos();
     }
     IEnumerator choqueCoche()
     {
         yield return new WaitForSeconds(0.2f);
         Physics2D.IgnoreCollision(GameObject.FindWithTag("Coche").GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+    }
+
+    void GuardarDatos()
+    {
+        PlayerPrefs.SetInt("Mascarillas_actuales", mascarillas);
     }
 }

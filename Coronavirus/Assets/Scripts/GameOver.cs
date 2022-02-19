@@ -8,19 +8,20 @@ public class GameOver : MonoBehaviour
 {
     public Text record_txt;
     public Text actual_txt;
-    //private PlayerController jugador;
+    private AudioSource source { get { return GetComponent<AudioSource>(); } }
+    public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
     {
-        //jugador = gameObject.GetComponent<PlayerController>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         record_txt.text = "Record ............... " + PlayerPrefs.GetInt("Mascarillas").ToString();
-        //actual_txt.text = jugador.Mascarillas.ToString();
+        actual_txt.text = "Punt. actual ......... " + PlayerPrefs.GetInt("Mascarillas_actuales").ToString();
     }
 
     public void Jugar()
@@ -37,5 +38,10 @@ public class GameOver : MonoBehaviour
         Application.Quit();
         Debug.Log("Has salido de la aplicación");
     }
-    
+    public void ReproducirSonido()
+    {
+        gameObject.AddComponent<AudioSource>();
+        source.PlayOneShot(clip);
+    }
+
 }
