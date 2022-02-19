@@ -844,11 +844,12 @@ MonoBehaviour:
   animator: {fileID: 671079123}
   fuerza: 12
   salto_clip: {fileID: 8300000, guid: bbb4832becd205c49bd388de0ee40f09, type: 3}
-  danyo_clip: {fileID: 8300000, guid: e9e447cc52ddbfd41a28de7f1f140db8, type: 3}
+  danyo_clip: {fileID: 8300000, guid: 96660e7243603f14d96c15f7a459db46, type: 3}
   coche_clip: {fileID: 8300000, guid: 6c416cfa3dbee1e4ea8dc4e7147bb003, type: 3}
   mascarilla_clip: {fileID: 8300000, guid: b0fb9f3d23a8ef647a0918785efc1e2b, type: 3}
   muerte_clip: {fileID: 8300000, guid: a3769814313ec9d4dad0cd27ef607838, type: 3}
   record_clip: {fileID: 8300000, guid: 46562a20b390a3a49a345a94e6a3214e, type: 3}
+  alcantarilla_clip: {fileID: 8300000, guid: 50c368136381cf64790fc43164e6ece9, type: 3}
 --- !u!212 &671079119
 SpriteRenderer:
   m_ObjectHideFlags: 0

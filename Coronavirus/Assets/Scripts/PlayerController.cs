@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip mascarilla_clip;
     public AudioClip muerte_clip;
     public AudioClip record_clip;
+    public AudioClip alcantarilla_clip;
 
     private AudioSource personajeAS;
 
@@ -115,6 +116,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Alcantarilla")
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+            personajeAS.PlayOneShot(alcantarilla_clip);
         }
     }
     void OnBecameInvisible()
