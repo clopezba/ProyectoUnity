@@ -2481,7 +2481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coche: {fileID: 7737298095823950434, guid: 5ecd9204d3ddfbc4da5566f1df7236e8, type: 3}
-  probabilidadAparicion: 0.8
+  probabilidadAparicion: 0.2
   cantidad: 1
 --- !u!1 &1519722732
 GameObject:
@@ -2574,7 +2574,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1532016497
 Transform:
   m_ObjectHideFlags: 0
@@ -2601,8 +2601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8881dcd4e77b6468bc4a3fe3abd508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coche: {fileID: 2596683086139766598, guid: d1eda59a769b5d746bda45754a56df7f, type: 3}
-  probabilidadAparicion: 0.1
+  coche: {fileID: 1661513682133138708, guid: d1eda59a769b5d746bda45754a56df7f, type: 3}
+  probabilidadAparicion: 0.2
   cantidad: 1
 --- !u!114 &1555292954
 MonoBehaviour:
@@ -2668,7 +2668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coronavirus_original: {fileID: 7094940964283994208, guid: 82542026385b4124c874995701f152ba, type: 3}
-  probabilidadAparicion: 0.2
+  probabilidadAparicion: 0.3
   cantidad: 2
 --- !u!4 &1561882612
 Transform:

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -69,7 +68,7 @@ public class PlayerController : MonoBehaviour
     {
         //Saltar solo cuando toque suelo
         //TODO - Valorar doble salto
-        if(col.gameObject.tag == "Suelo")
+        if(col.gameObject.tag == "Suelo" || col.gameObject.tag == "Coche")
         {
             saltando = false;
         }
@@ -80,24 +79,22 @@ public class PlayerController : MonoBehaviour
             Destroy(col.gameObject, 0.5f);
             danyo();
         }
-        //Choque con coche
-        if (col.gameObject.tag == "Coche" && col.gameObject.tag == "Suelo")
-        {
-                danyo();
-                Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-        }
-        
-
     }
     void OnTriggerEnter2D(Collider2D col)
     {
         //Choque con mascarillas - Recolectar
         if(col.gameObject.tag == "Mascarilla")
         {
-            col.gameObject.SetActive(false);
+            //col.gameObject.SetActive(false);
             Destroy(col.gameObject);
             mascarillas++;
             Debug.Log("Mascarillas: " + mascarillas);
+        }
+        //Choque con coche
+        if (col.gameObject.tag == "Choque")
+        {
+            danyo();
+            StartCoroutine(choqueCoche());
         }
     }
     void OnCollisionStay2D(Collision2D collision)
@@ -146,5 +143,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator choqueCoche()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Physics2D.IgnoreCollision(GameObject.FindWithTag("Coche").GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
     }
 }
