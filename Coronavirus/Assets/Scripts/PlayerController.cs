@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
             saltando = true;
             personajeAS.PlayOneShot(salto_clip);
         }
+
     }
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -96,7 +97,11 @@ public class PlayerController : MonoBehaviour
             Destroy(col.gameObject, 0.5f);
             danyo();
         }
-    }
+        if (col.gameObject.tag == "Alcantarilla") { 
+            Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+        
+        }
+        }
     void OnTriggerEnter2D(Collider2D col)
     {
         //Choque con mascarillas - Recolectar
@@ -115,12 +120,16 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(choqueCoche());
         }
     }
-    void OnCollisionStay2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Alcantarilla")
-        {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-            personajeAS.PlayOneShot(alcantarilla_clip);
+        {
+            if (GetComponent<SpriteRenderer>().transform.position.y <= -4.5)
+            {
+
+                personajeAS.PlayOneShot(alcantarilla_clip);
+            }
         }
     }
     void OnBecameInvisible()
@@ -137,7 +146,7 @@ public class PlayerController : MonoBehaviour
     {
         vidas--;
         Debug.Log("Te quedan " + vidas + " vidas.");
-        if (vidas == 0)
+        if (vidas <= 0)
         {
             personajeAS.PlayOneShot(muerte_clip);
             animator.SetTrigger("Daño");
@@ -165,6 +174,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else
+        {
+                 StartCoroutine(Parpadeo());               
+        }
         GuardarDatos();
     }
     IEnumerator choqueCoche()
@@ -176,5 +189,18 @@ public class PlayerController : MonoBehaviour
     void GuardarDatos()
     {
         PlayerPrefs.SetInt("Mascarillas_actuales", mascarillas);
+    }
+
+    private IEnumerator Parpadeo()
+    {
+        SpriteRenderer jugadorRender = GetComponent<SpriteRenderer>();
+
+        for (int i = 0; i < 3; i++)
+        {
+            jugadorRender.color = new Color(0, 0, 0, 18);
+            yield return new WaitForSeconds(0.08f);
+            jugadorRender.color = new Color(1, 1, 1, 1);
+            yield return new WaitForSeconds(0.08f);
+        }
     }
 }

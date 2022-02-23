@@ -13,16 +13,9 @@ public class CocheController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(-120.0f * Time.deltaTime, 0.0f);
-        //GetComponent<Rigidbody2D>().AddForce(new Vector2(-50.0f, 0.0f));
+        GetComponent<Rigidbody2D>().velocity = new Vector2(-8.0f, 0.0f);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Limite")
-        {
-            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-        }   
-    }
+    
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -34,4 +27,6 @@ public class CocheController : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+
 }

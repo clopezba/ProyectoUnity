@@ -364,7 +364,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.24085, y: 1.1199999}
+  m_Size: {x: 21.24085, y: 1.1199989}
   m_EdgeRadius: 0
 --- !u!1 &282567185
 GameObject:
@@ -463,7 +463,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.26865897, y: -0.11364111}
+  m_Offset: {x: -0.2703981, y: 0.0009749532}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -474,7 +474,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.70524555, y: 0.5479353}
+  m_Size: {x: 0.84603626, y: 0.31870317}
   m_EdgeRadius: 0
 --- !u!1 &319824956
 GameObject:
@@ -954,7 +954,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 3
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 3
   m_Material: {fileID: 0}
@@ -1089,7 +1089,7 @@ GameObject:
   - component: {fileID: 683580912}
   m_Layer: 0
   m_Name: chapaAlcantarilla
-  m_TagString: Untagged
+  m_TagString: Alcantarilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
