@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8374190397261027214}
   - component: {fileID: 3749044792363592080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel-front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5420738406392820866}
   - component: {fileID: 3133695741131290633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel-back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 3456395987998291306}
   - component: {fileID: 8697037327589834346}
   - component: {fileID: 968010155029876867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CocheMini
   m_TagString: Coche
   m_Icon: {fileID: 0}
@@ -301,12 +301,12 @@ PolygonCollider2D:
       - {x: 2.27, y: 0.805}
       - {x: 2.21, y: 0.98499995}
       - {x: 2.09, y: 1.005}
-      - {x: 1.74, y: 1.0749999}
-      - {x: 1.77, y: 1.0899738}
-      - {x: 1.7518935, y: 1.0911596}
+      - {x: 1.6673367, y: 1.0507787}
+      - {x: 1.7561593, y: 1.0449916}
+      - {x: 1.667592, y: 1.0519962}
       - {x: 1.6715398, y: 1.0568411}
-      - {x: 1.6596457, y: 1.0770183}
-      - {x: 1.6779293, y: 1.076186}
+      - {x: 1.6631056, y: 1.0597174}
+      - {x: 1.6779293, y: 1.0519648}
       - {x: 1.64, y: 1.055}
       - {x: 0.83, y: 1.055}
       - {x: 0.5, y: 1.045}
@@ -400,10 +400,10 @@ PolygonCollider2D:
       - {x: -0.32, y: 0.074999996}
     - - {x: 1.6515398, y: 1.0526996}
       - {x: 1.6594691, y: 1.0568414}
-      - {x: 1.6834338, y: 1.0728767}
-      - {x: 1.743788, y: 1.0968411}
-      - {x: 1.7479293, y: 1.080629}
-      - {x: 1.6636105, y: 1.0585581}
+      - {x: 1.6834338, y: 1.0486555}
+      - {x: 1.7272313, y: 1.0471699}
+      - {x: 1.7479293, y: 1.0475146}
+      - {x: 1.7678952, y: 1.0322005}
 --- !u!50 &4842525842597633692
 Rigidbody2D:
   serializedVersion: 4
@@ -412,7 +412,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7737298095823950434}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -562,7 +562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7541459103949492405}
   - component: {fileID: 6355185599457349095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: choque
   m_TagString: Choque
   m_Icon: {fileID: 0}

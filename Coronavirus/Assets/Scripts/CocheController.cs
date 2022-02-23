@@ -13,7 +13,8 @@ public class CocheController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(-12.0f*Time.deltaTime, 0.0f), ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(-120.0f * Time.deltaTime, 0.0f);
+        //GetComponent<Rigidbody2D>().AddForce(new Vector2(-50.0f, 0.0f));
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

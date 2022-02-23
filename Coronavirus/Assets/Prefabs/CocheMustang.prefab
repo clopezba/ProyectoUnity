@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8020635038268200401}
   - component: {fileID: 5714103650117446501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: choque
   m_TagString: Choque
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 8618302455322404124}
   - component: {fileID: 8021622818653997107}
   - component: {fileID: 5645023266113037157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CocheMustang
   m_TagString: Coche
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661513682133138708}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -506,7 +506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5305744468295420140}
   - component: {fileID: 1140816000264613373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel-front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2555730822216168306}
   - component: {fileID: 5442663966952201209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel-back
   m_TagString: Untagged
   m_Icon: {fileID: 0}

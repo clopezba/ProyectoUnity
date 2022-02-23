@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>(); 
         animator = GetComponent<Animator>();
+        PlayerPrefs.DeleteKey("Record");
+        PlayerPrefs.SetInt("Mascarillas", 0);
     }
     // Start is called before the first frame update
     void Start()
@@ -145,10 +147,10 @@ public class PlayerController : MonoBehaviour
             if (PlayerPrefs.HasKey("Mascarillas") == false)
             {
                 //No hay record guardado
-                personajeAS.PlayOneShot(record_clip);
                 PlayerPrefs.SetInt("Mascarillas", mascarillas);
                 Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
                 //TODO - Pantalla de nuevo record
+                PlayerPrefs.SetString("Record", "Nuevo record");
             }
             else
             {
@@ -156,9 +158,9 @@ public class PlayerController : MonoBehaviour
                 if (recordUltimo < mascarillas)
                 {
                     //Nuevo record
-                    personajeAS.PlayOneShot(record_clip);
                     PlayerPrefs.SetInt("Mascarillas", mascarillas);
                     Debug.Log("¡NUEVO RECORD! " + mascarillas + " mascarillas recogidas");
+                    PlayerPrefs.SetString("Record", "Nuevo record");
                 }
             }
         }

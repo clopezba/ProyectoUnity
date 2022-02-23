@@ -735,6 +735,7 @@ MonoBehaviour:
   record_txt: {fileID: 2012813988}
   actual_txt: {fileID: 1746188473}
   clip: {fileID: 8300000, guid: 71e6828e83270b34481437c0349d035b, type: 3}
+  record: {fileID: 8300000, guid: 46562a20b390a3a49a345a94e6a3214e, type: 3}
 --- !u!82 &1318970363
 AudioSource:
   m_ObjectHideFlags: 0

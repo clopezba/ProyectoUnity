@@ -10,11 +10,17 @@ public class GameOver : MonoBehaviour
     public Text actual_txt;
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
     public AudioClip clip;
+    public AudioClip record;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (PlayerPrefs.HasKey("Record"))
+        {
+            source.PlayOneShot(record);
+            Debug.Log("Nuevo Record!!");
+        }
     }
 
     // Update is called once per frame
