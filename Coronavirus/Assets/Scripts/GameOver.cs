@@ -16,11 +16,12 @@ public class GameOver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("Record"))
-        {
-            source.PlayOneShot(record);
-            Debug.Log("Nuevo Record!!");
-        }
+        //TODO - +++[ Panel nuevo record ]++++++
+        //if (PlayerPrefs.HasKey("Record"))
+        //{
+        //    source.PlayOneShot(record);
+        //    Debug.Log("Nuevo Record!!");
+        //}
     }
 
     // Update is called once per frame
