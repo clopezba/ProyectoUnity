@@ -13,7 +13,7 @@ public class CocheController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(-8.0f, 0.0f);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(-200.0f*Time.deltaTime, 0.0f);
     }
     
     private void OnCollisionStay2D(Collision2D collision)

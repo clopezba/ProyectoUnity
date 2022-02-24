@@ -8,30 +8,39 @@ public class CambiarSonido : MonoBehaviour
     public Sprite boton_on;
     public Sprite boton_off;
     public Button btn;
-    private bool sonando = true;
+    private Musica music;
 
     // Start is called before the first frame update
     void Start()
     {
-        boton_on = btn.image.sprite;
+        music = GameObject.FindObjectOfType<Musica>();
+        ActualizarIcono();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void cambiarMusica()
+    public void PausarMusica()
     {
-        if (sonando)
+        music.cambiarSonido();
+        ActualizarIcono();
+    }
+
+    void ActualizarIcono()
+    {
+        if(PlayerPrefs.GetInt("Muted", 0) == 0)
         {
-            btn.image.sprite = boton_off;
-            sonando = false;
+            AudioListener.volume = 0.3f;
+            btn.GetComponent<Image>().sprite = boton_on;
         } else
         {
-            btn.image.sprite = boton_on;
-            sonando = true;
+            AudioListener.volume = 0;
+            btn.GetComponent<Image>().sprite = boton_off;
         }
     }
+
+        
 }

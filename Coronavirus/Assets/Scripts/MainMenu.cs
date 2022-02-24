@@ -6,7 +6,6 @@ public class MainMenu : MonoBehaviour
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
     public AudioClip clip;
     
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,29 +19,18 @@ public class MainMenu : MonoBehaviour
     }
     public void ReproducirSonido()
     {
-        gameObject.AddComponent<AudioSource>();
-        source.PlayOneShot(clip);
+       source.PlayOneShot(clip);
     }
 
     public void Jugar()
     {
         SceneManager.LoadScene("CoronAttack");
+
     }
 
     public void Salir()
     {
         Application.Quit();
         Debug.Log("Has salido de la aplicación");
-    }
-
-    public void silenciar()
-    {
-        if (source.mute)
-        {
-            source.mute = false;
-        } else
-        {
-            source.mute = true;
-        }
     }
 }
