@@ -518,7 +518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &153809025
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3866,8 +3866,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -482, y: -56}
-  m_SizeDelta: {x: 780.1169, y: 755.6105}
+  m_AnchoredPosition: {x: -450.07, y: -56}
+  m_SizeDelta: {x: 843.97, y: 755.6105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993771154
 MonoBehaviour:
@@ -3906,8 +3906,8 @@ MonoBehaviour:
     L\xF3pez Bachiller\ncraftpix.net\nitch.io -> overcrafted, SbaDany \npixabay.com\n\nCristina
     L\xF3pez Bachiller\n\nLudicArts.com > Franco Giachetti\n\nOpenGameArt.org > qubodup,
     crazyduckgames\nmixkit.co\n\nMarta L\xF3pez Bachiller\n\nOpenGameArt.org: \nRock
-    loop 3 - GTDStudio\nFuneral March - Composed by Frederic Chopin. Arranged by
-    Jon K. Fite\nTitle Screen - Irrational Machines\n"
+    loop 3 - GTDStudio\nFuneral March - Frederic Chopin (Arreglo de Jon K. Fite)\nTitle
+    Screen - Irrational Machines\n"
 --- !u!222 &1993771155
 CanvasRenderer:
   m_ObjectHideFlags: 0
