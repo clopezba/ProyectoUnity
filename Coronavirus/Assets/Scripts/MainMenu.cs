@@ -5,7 +5,9 @@ public class MainMenu : MonoBehaviour
 {
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
     public AudioClip clip;
-    
+    public GameObject creditos_pn;
+    public GameObject instrucciones_pn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,26 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("CoronAttack");
 
     }
+
+    public void Creditos()
+    {
+        creditos_pn.SetActive(true);
+    }
+    public void creditosCerrar()
+    {
+        creditos_pn.SetActive(false);
+    }
+
+    public void Instrucciones()
+    {
+        instrucciones_pn.SetActive(true);
+    }
+    public void instruccionesCerrar()
+    {
+        instrucciones_pn.SetActive(false);
+    }
+
+
 
     public void Salir()
     {
