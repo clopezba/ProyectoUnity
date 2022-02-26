@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 883227803}
   - component: {fileID: 883227802}
   m_Layer: 5
-  m_Name: Chica_img
+  m_Name: personaje_img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -953,6 +953,9 @@ MonoBehaviour:
   actual_txt: {fileID: 1746188473}
   clip: {fileID: 8300000, guid: 71e6828e83270b34481437c0349d035b, type: 3}
   record: {fileID: 8300000, guid: 46562a20b390a3a49a345a94e6a3214e, type: 3}
+  carmen_img: {fileID: -1646823786108173521, guid: e6c435465514dbb40a7394b0c3ada1ce, type: 3}
+  fernando_img: {fileID: 5003178820419776933, guid: 1ec5be43ae960be4aa76dff9b2edc6ea, type: 3}
+  img: {fileID: 883227802}
 --- !u!82 &1318970363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1213,7 +1216,7 @@ Canvas:
   m_GameObject: {fileID: 1477254818}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1318970360}
   m_PlaneDistance: 100
   m_PixelPerfect: 0

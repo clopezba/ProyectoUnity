@@ -12,6 +12,14 @@ public class GameOver : MonoBehaviour
     public AudioClip clip;
     public AudioClip record;
 
+    public Sprite carmen_img;
+    public Sprite fernando_img;
+    public Image img;
+
+    void Awake()
+    {
+        ActualizarImagen();    
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +52,20 @@ public class GameOver : MonoBehaviour
     {
         gameObject.AddComponent<AudioSource>();
         source.PlayOneShot(clip);
+    }
+
+    void ActualizarImagen()
+    {
+        if (PlayerPrefs.GetInt("JugadorSel") == 0)
+        {
+            
+            img.GetComponent<Image>().sprite = carmen_img;
+        }
+        else
+        {
+            
+            img.GetComponent<Image>().sprite = fernando_img;
+        }
     }
 
 }

@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("Corriendo", false);
         animator.SetBool("Saltando", saltando);
-        animator.SetBool("Cayendo", false);
+        //animator.SetBool("Cayendo", false);
 
 
         float horizontal = Input.GetAxis("Horizontal");
@@ -132,13 +132,9 @@ public class PlayerController : MonoBehaviour
     void OnBecameInvisible()
     {
         danyo();
-        Destroy(gameObject, 1.5f);    
+        StartCoroutine(Muerte());
     }
-    void OnDestroy()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
-
+    
     private void danyo()
     {
         vidas--;
@@ -147,7 +143,7 @@ public class PlayerController : MonoBehaviour
         {
             personajeAS.PlayOneShot(muerte_clip);
             animator.SetTrigger("Daño");
-            Destroy(gameObject, 1.5f);
+            StartCoroutine(Muerte());
             Debug.Log("¡Game over!");
             
             //Comprobar y guardar nuevos records
@@ -199,5 +195,11 @@ public class PlayerController : MonoBehaviour
             jugadorRender.color = new Color(1, 1, 1, 1);
             yield return new WaitForSeconds(0.08f);
         }
+    }
+
+    private IEnumerator Muerte()
+    {
+        yield return new WaitForSeconds(1.6f);
+        SceneManager.LoadScene("GameOver");
     }
 }

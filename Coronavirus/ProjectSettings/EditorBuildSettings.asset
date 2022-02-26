@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 17587060adde4364bbc97ff2ff21dfd0
   - enabled: 1
+    path: Assets/Scenes/SeleccionPersonaje.unity
+    guid: 419ee55ca4596ee40ac2a4e4cd29905f
+  - enabled: 1
     path: Assets/Scenes/CoronAttack.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

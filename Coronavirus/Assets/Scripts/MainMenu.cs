@@ -26,8 +26,7 @@ public class MainMenu : MonoBehaviour
 
     public void Jugar()
     {
-        SceneManager.LoadScene("CoronAttack");
-
+        SceneManager.LoadScene("SeleccionPersonaje");
     }
 
     public void Creditos()
@@ -47,8 +46,6 @@ public class MainMenu : MonoBehaviour
     {
         instrucciones_pn.SetActive(false);
     }
-
-
 
     public void Salir()
     {

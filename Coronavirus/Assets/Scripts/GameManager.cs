@@ -8,11 +8,24 @@ public class GameManager : MonoBehaviour
 {
     public Text vidas_txt;
     public Text mascarilla_txt;
-    public PlayerController jugador;
+    private PlayerController jugador;
 
-    void Start()
+    public GameObject[] personajes;
+    public Transform posicionInicial;
+    int personajeSelec;
+    public GameObject jug;
+
+    void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        personajeSelec = PlayerPrefs.GetInt("JugadorSel", 0);
+        jug = Instantiate(personajes[personajeSelec], posicionInicial.position, personajes[personajeSelec].transform.rotation);
+
+        jugador = jug.GetComponent<PlayerController>();
+    }
+    void Start()
+    {
+        
     }
     void Update()
     {
