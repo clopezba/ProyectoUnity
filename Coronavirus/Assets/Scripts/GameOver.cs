@@ -10,8 +10,7 @@ public class GameOver : MonoBehaviour
     public Text actual_txt;
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
     public AudioClip clip;
-    public AudioClip record;
-
+    
     public Sprite carmen_img;
     public Sprite fernando_img;
     public Image img;

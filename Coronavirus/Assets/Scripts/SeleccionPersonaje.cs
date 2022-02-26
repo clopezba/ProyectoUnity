@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SeleccionPersonaje : MonoBehaviour
 {
-    
-    
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }    
+    }
+
     public void onCarmenPress()
     {
         PlayerPrefs.SetInt("JugadorSel", 0);

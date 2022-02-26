@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -11,9 +12,13 @@ public class GameManager : MonoBehaviour
     private PlayerController jugador;
 
     public GameObject[] personajes;
+    
     public Transform posicionInicial;
     int personajeSelec;
     public GameObject jug;
+
+    public Sprite[] imagenes;
+    public Image imagen_vidas;
 
     void Awake()
     {
@@ -22,6 +27,8 @@ public class GameManager : MonoBehaviour
         jug = Instantiate(personajes[personajeSelec], posicionInicial.position, personajes[personajeSelec].transform.rotation);
 
         jugador = jug.GetComponent<PlayerController>();
+
+        imagen_vidas.GetComponent<Image>().sprite = imagenes[personajeSelec];
     }
     void Start()
     {
@@ -38,5 +45,12 @@ public class GameManager : MonoBehaviour
         }
         
         mascarilla_txt.text = "X " + jugador.Mascarillas.ToString();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
+
+    
 }

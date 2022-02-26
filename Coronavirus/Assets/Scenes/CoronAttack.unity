@@ -2625,7 +2625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4903967878205017862, guid: c0800c6710a30bf4198f8dadc94d3a3e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2805,6 +2805,10 @@ MonoBehaviour:
   - {fileID: 5978494800178036470, guid: 116c921aee92ac74283821c6ef6464b3, type: 3}
   posicionInicial: {fileID: 1797461659}
   jug: {fileID: 0}
+  imagenes:
+  - {fileID: 4903967878205017862, guid: c0800c6710a30bf4198f8dadc94d3a3e, type: 3}
+  - {fileID: 8289074270607948214, guid: d804e62d99ec5114fbd53d2fa5af0311, type: 3}
+  imagen_vidas: {fileID: 1519722734}
 --- !u!4 &1576852373
 Transform:
   m_ObjectHideFlags: 0

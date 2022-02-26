@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     public AudioClip coche_clip;
     public AudioClip mascarilla_clip;
     public AudioClip muerte_clip;
-    public AudioClip record_clip;
     public AudioClip alcantarilla_clip;
 
     private AudioSource personajeAS;
