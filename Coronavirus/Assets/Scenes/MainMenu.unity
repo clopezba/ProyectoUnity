@@ -518,7 +518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &153809025
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1791,8 +1791,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\nDise\xF1o del juego\n\nProgramaci\xF3n\n\nGr\xE1ficos de escena principal\n\n\n\n\nGr\xE1ficos
-    de interfaz de usuario\n\nCaracteres\n\nEfectos de sonido\n\n\nVoz de personaje
-    (Carmen)\n\nM\xFAsica"
+    de interfaz de usuario\n\nCaracteres\n\nEfectos de sonido\n\n\nVoz de personajes\n\nM\xFAsica"
 --- !u!222 &797773343
 CanvasRenderer:
   m_ObjectHideFlags: 0
