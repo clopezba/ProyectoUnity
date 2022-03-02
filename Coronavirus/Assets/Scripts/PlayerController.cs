@@ -99,6 +99,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.tag == "Destructor")
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         }
     }
     void OnTriggerEnter2D(Collider2D col)
