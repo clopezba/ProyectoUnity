@@ -95,9 +95,12 @@ public class PlayerController : MonoBehaviour
         }
         if (col.gameObject.tag == "Alcantarilla") { 
             Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-        
         }
+        if (col.gameObject.tag == "Destructor")
+        {
+            Destroy(gameObject);
         }
+    }
     void OnTriggerEnter2D(Collider2D col)
     {
         //Choque con mascarillas - Recolectar

@@ -23,10 +23,13 @@ public class CoronavirusController : MonoBehaviour
         {
             Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
         }
+        if(col.gameObject.tag == "Destructor")
+        {
+            Destroy(gameObject);
+        }
     }
-    void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
+
+    
+
 
 }

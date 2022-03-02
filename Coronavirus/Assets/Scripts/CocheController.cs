@@ -16,17 +16,15 @@ public class CocheController : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(-200.0f*Time.deltaTime, 0.0f);
     }
     
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Destructor")
         {
-            FixedUpdate();
+            Destroy(gameObject);
         }
     }
-    void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
+   
+
 
 
 }
