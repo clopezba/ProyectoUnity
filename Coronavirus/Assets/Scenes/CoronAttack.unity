@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 1006924833}
   - component: {fileID: 1006924832}
   m_Layer: 0
-  m_Name: Casas1
+  m_Name: Casas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

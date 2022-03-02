@@ -2,25 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Script para generar el efecto Parallax en el fondo de la escena
+ */
 public class MoverFondos : MonoBehaviour
 {
     public GameObject[] fondos;
     public float[] velocidadFondos;
     public float[] tamanyoFondos;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    /*
+     * Método que se ejecuta una vez por fotograma
+     * Ejecuta el método MueveFondos
+     */
     void Update()
     {
         MueveFondos();
     }
 
-    //Mueve los fondos con efecto Parallax - cada uno a una velocidad para dar efecto de profundidad
+    /*
+     * Método que mueve los fondos con efecto Parallax 
+     * Cada uno se mueve a una velocidad para dar efecto de profundidad
+     */
     private void MueveFondos()
     {
         for (int i = 0; i < fondos.Length; i++)

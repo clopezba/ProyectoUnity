@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Script para el controlador de mascarillas
+ */
 public class MascarillaController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    /*
+     * Método que se ejecuta una vez por fotograma en un tiempo fijo
+     * Añade una fuerza que establece la dirección y velocidad de las mascarillas
+     * Destruye el objeto cuando sale de la cámara
+     */
     void FixedUpdate()
     {
         //Movimiento mascarillas

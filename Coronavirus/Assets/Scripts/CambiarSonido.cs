@@ -41,11 +41,9 @@ public class CambiarSonido : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("Muted", 0) == 0)
         {
-            AudioListener.volume = 0.3f;
             btn.GetComponent<Image>().sprite = boton_on;
         } else
         {
-            AudioListener.volume = 0;
             btn.GetComponent<Image>().sprite = boton_off;
         }
     }

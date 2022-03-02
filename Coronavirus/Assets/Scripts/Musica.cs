@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /*
- * Script que se ejecuta a lo largo de las distintas escenas del juego y determina el clip de audio y si está silenciado ono
+ * Script que se ejecuta a lo largo de las distintas escenas del juego y determina el clip de audio y si está silenciado o no
  */
 public class Musica : MonoBehaviour
 {
@@ -23,7 +23,7 @@ public class Musica : MonoBehaviour
 
     /*
      * Método que recibe las preferencias sobre la configuración de sonido establecidas en la escena de menú
-     * y las aplica a la escena actual
+     * y las ejecuta
      */
     public void cambiarSonido()
     {

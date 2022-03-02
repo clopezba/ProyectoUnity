@@ -2,18 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Script para el movimiento de la cámara de la escena de juego
+ */
 public class MoverCamara : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+   /*
+    * Método que se ejecuta una vez por fotograma
+    * Establece la dirección y velocidad de la cámara de la escena de juego
+    */
     void Update()
     {
-        //Mover la cámara
-        transform.Translate(new Vector3(0.1f*Time.deltaTime, 0.0f));
+       transform.Translate(new Vector3(0.1f*Time.deltaTime, 0.0f));
     }
 }
